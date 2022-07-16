@@ -10,6 +10,12 @@
 		04503CC22883087000A5434D /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04503CC12883087000A5434D /* MainVC.swift */; };
 		04503CC4288308AB00A5434D /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04503CC3288308AB00A5434D /* MainVC.xib */; };
 		04503CC7288308CF00A5434D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04503CC6288308CF00A5434D /* MainViewModel.swift */; };
+		04503CCC28830BB200A5434D /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04503CCB28830BB200A5434D /* NetworkProvider.swift */; };
+		04503CD128830BEF00A5434D /* Config+server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04503CD028830BEF00A5434D /* Config+server.swift */; };
+		04503CD428830CB300A5434D /* TicketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04503CD328830CB300A5434D /* TicketService.swift */; };
+		04503CD728830D2400A5434D /* TicketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04503CD628830D2400A5434D /* TicketManager.swift */; };
+		04503CDA28830D7600A5434D /* RateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04503CD928830D7600A5434D /* RateModel.swift */; };
+		04503CDC288310B700A5434D /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04503CDB288310B700A5434D /* TransactionModel.swift */; };
 		04C247222883071600ED4790 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C247212883071600ED4790 /* AppDelegate.swift */; };
 		04C2472B2883071A00ED4790 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C2472A2883071A00ED4790 /* Assets.xcassets */; };
 		04C2472E2883071A00ED4790 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C2472C2883071A00ED4790 /* LaunchScreen.storyboard */; };
@@ -20,6 +26,12 @@
 		04503CC12883087000A5434D /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		04503CC3288308AB00A5434D /* MainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
 		04503CC6288308CF00A5434D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		04503CCB28830BB200A5434D /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		04503CD028830BEF00A5434D /* Config+server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Config+server.swift"; sourceTree = "<group>"; };
+		04503CD328830CB300A5434D /* TicketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketService.swift; sourceTree = "<group>"; };
+		04503CD628830D2400A5434D /* TicketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketManager.swift; sourceTree = "<group>"; };
+		04503CD928830D7600A5434D /* RateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateModel.swift; sourceTree = "<group>"; };
+		04503CDB288310B700A5434D /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 		04C2471E2883071600ED4790 /* Tickets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tickets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C247212883071600ED4790 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04C2472A2883071A00ED4790 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -84,6 +96,66 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		04503CC828830B8300A5434D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				04503CC928830B8E00A5434D /* Networking */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		04503CC928830B8E00A5434D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				04503CD528830D1600A5434D /* Managers */,
+				04503CD828830D5A00A5434D /* Models */,
+				04503CCA28830B9800A5434D /* Provider */,
+				04503CD228830CA000A5434D /* Services */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		04503CCA28830B9800A5434D /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				04503CCB28830BB200A5434D /* NetworkProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		04503CCD28830BC600A5434D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				04503CD028830BEF00A5434D /* Config+server.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		04503CD228830CA000A5434D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				04503CD328830CB300A5434D /* TicketService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		04503CD528830D1600A5434D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				04503CD628830D2400A5434D /* TicketManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		04503CD828830D5A00A5434D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04503CD928830D7600A5434D /* RateModel.swift */,
+				04503CDB288310B700A5434D /* TransactionModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		04C247152883071600ED4790 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				04C247212883071600ED4790 /* AppDelegate.swift */,
+				04503CC828830B8300A5434D /* Classes */,
+				04503CCD28830BC600A5434D /* Config */,
 				04503CBD2883083E00A5434D /* Controllers */,
 				04503CBE2883084500A5434D /* Images */,
 				04C2472F2883071A00ED4790 /* Info.plist */,
@@ -120,7 +194,6 @@
 				84B4124A9418233775E2EFE5 /* Pods-Tickets.debug.xcconfig */,
 				CCDED954622BFB7AEE471688 /* Pods-Tickets.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -229,9 +302,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04503CDC288310B700A5434D /* TransactionModel.swift in Sources */,
 				04C247222883071600ED4790 /* AppDelegate.swift in Sources */,
+				04503CCC28830BB200A5434D /* NetworkProvider.swift in Sources */,
 				04503CC22883087000A5434D /* MainVC.swift in Sources */,
+				04503CD428830CB300A5434D /* TicketService.swift in Sources */,
 				04503CC7288308CF00A5434D /* MainViewModel.swift in Sources */,
+				04503CD128830BEF00A5434D /* Config+server.swift in Sources */,
+				04503CD728830D2400A5434D /* TicketManager.swift in Sources */,
+				04503CDA28830D7600A5434D /* RateModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

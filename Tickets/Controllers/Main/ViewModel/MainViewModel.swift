@@ -11,3 +11,25 @@ import Foundation
 class MainViewModel {
     
 }
+
+extension MainViewModel {
+    func loadData() {
+        
+    }
+}
+
+// MARK: - Private API
+
+private extension MainViewModel {
+    func fetchRates() {
+        TicketManager.rates { rateArray, errorMessage in
+            
+        }
+    }
+    
+    func fetchTransactions() {
+        TicketManager.transactions { transactionArray, errorMessage in
+            
+        }
+    }
+}
