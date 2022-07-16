@@ -51,6 +51,10 @@ extension DetailViewModel {
         
         return cellModels[index]
     }
+    
+    var title: String? {
+        return transactions.first?.sku
+    }
 }
 
 // MARK: - Public

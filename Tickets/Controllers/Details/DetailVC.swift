@@ -52,7 +52,7 @@ class DetailVC: UIViewController {
 
 private extension DetailVC {
     func configure() {
-        navigationItem.title = ""
+        navigationItem.title = viewModel.title
         totalLabel.text = "0"
         tableView.register(DetailCell.self)
     }
