@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import ReactiveCocoa
+import ReactiveSwift
 
 class DetailVC: UIViewController {
     
@@ -15,12 +17,25 @@ class DetailVC: UIViewController {
     @IBOutlet private var totalLabel: UILabel!
     
     private let viewModel: DetailViewModel
+    private let (lifetime, token) = Lifetime.make()
+    
+    private var showTotal: BindingTarget<String> {
+        return BindingTarget(lifetime: lifetime, action: { [weak self] totalAmount in
+            self?.totalLabel.text = totalAmount
+        })
+    }
     
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
+        bindingViewModel()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        viewModel.calculateTotal()
     }
     
     init(viewModel: DetailViewModel) {
@@ -38,8 +53,16 @@ class DetailVC: UIViewController {
 private extension DetailVC {
     func configure() {
         navigationItem.title = ""
-        totalLabel.text = viewModel.totalEur
+        totalLabel.text = "0"
         tableView.register(DetailCell.self)
+    }
+}
+
+// MARK: - BindingViewModel
+
+private extension DetailVC {
+    func bindingViewModel() {
+        showTotal <~ viewModel.showTotal
     }
 }
 

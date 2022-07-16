@@ -10,7 +10,6 @@ import ReactiveSwift
 
 struct MainCellModel {
     let sku: String
-    let currency: String?
 }
 
 struct DetailModel {
@@ -130,7 +129,7 @@ private extension MainViewModel {
         for transaction in transactions {
             if dict[transaction.sku] == nil {
                 dict[transaction.sku] = transaction.sku
-                let cellModel =  MainCellModel(sku: transaction.sku, currency: nil)
+                let cellModel =  MainCellModel(sku: transaction.sku)
                 tempCellModels.append(cellModel)
             }
         }
