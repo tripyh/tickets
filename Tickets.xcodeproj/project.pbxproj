@@ -22,6 +22,11 @@
 		04503CE92883149D00A5434D /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04503CE82883149D00A5434D /* MainCell.swift */; };
 		04503CEB288314C000A5434D /* MainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04503CEA288314C000A5434D /* MainCell.xib */; };
 		04503CEE288317D100A5434D /* UITableView+register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04503CED288317D100A5434D /* UITableView+register.swift */; };
+		04503CF1288329AA00A5434D /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04503CF0288329AA00A5434D /* DetailVC.swift */; };
+		04503CF3288329D700A5434D /* DetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04503CF2288329D700A5434D /* DetailVC.xib */; };
+		04503CF6288329FF00A5434D /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04503CF5288329FF00A5434D /* DetailViewModel.swift */; };
+		04503CF928832B2900A5434D /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04503CF828832B2900A5434D /* DetailCell.swift */; };
+		04503CFB28832BE300A5434D /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04503CFA28832BE300A5434D /* DetailCell.xib */; };
 		04C247222883071600ED4790 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C247212883071600ED4790 /* AppDelegate.swift */; };
 		04C2472B2883071A00ED4790 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C2472A2883071A00ED4790 /* Assets.xcassets */; };
 		04C2472E2883071A00ED4790 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C2472C2883071A00ED4790 /* LaunchScreen.storyboard */; };
@@ -44,6 +49,11 @@
 		04503CE82883149D00A5434D /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		04503CEA288314C000A5434D /* MainCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCell.xib; sourceTree = "<group>"; };
 		04503CED288317D100A5434D /* UITableView+register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+register.swift"; sourceTree = "<group>"; };
+		04503CF0288329AA00A5434D /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		04503CF2288329D700A5434D /* DetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailVC.xib; sourceTree = "<group>"; };
+		04503CF5288329FF00A5434D /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		04503CF828832B2900A5434D /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
+		04503CFA28832BE300A5434D /* DetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCell.xib; sourceTree = "<group>"; };
 		04C2471E2883071600ED4790 /* Tickets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tickets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C247212883071600ED4790 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04C2472A2883071A00ED4790 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,6 +79,7 @@
 		04503CBD2883083E00A5434D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				04503CEF2883299A00A5434D /* Details */,
 				04503CC02883085E00A5434D /* Main */,
 			);
 			path = Controllers;
@@ -214,6 +225,34 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		04503CEF2883299A00A5434D /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				04503CF728832B1A00A5434D /* Cell */,
+				04503CF4288329ED00A5434D /* ViewModel */,
+				04503CF0288329AA00A5434D /* DetailVC.swift */,
+				04503CF2288329D700A5434D /* DetailVC.xib */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		04503CF4288329ED00A5434D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				04503CF5288329FF00A5434D /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		04503CF728832B1A00A5434D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04503CF828832B2900A5434D /* DetailCell.swift */,
+				04503CFA28832BE300A5434D /* DetailCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		04C247152883071600ED4790 = {
 			isa = PBXGroup;
 			children = (
@@ -325,8 +364,10 @@
 			files = (
 				04503CC4288308AB00A5434D /* MainVC.xib in Resources */,
 				04C2472E2883071A00ED4790 /* LaunchScreen.storyboard in Resources */,
+				04503CFB28832BE300A5434D /* DetailCell.xib in Resources */,
 				04503CEB288314C000A5434D /* MainCell.xib in Resources */,
 				04C2472B2883071A00ED4790 /* Assets.xcassets in Resources */,
+				04503CF3288329D700A5434D /* DetailVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,15 +425,18 @@
 				04503CE72883142A00A5434D /* NibLoadableViewProtocol.swift in Sources */,
 				04503CCC28830BB200A5434D /* NetworkProvider.swift in Sources */,
 				04503CC22883087000A5434D /* MainVC.swift in Sources */,
+				04503CF1288329AA00A5434D /* DetailVC.swift in Sources */,
 				04503CE92883149D00A5434D /* MainCell.swift in Sources */,
 				04503CD428830CB300A5434D /* TicketService.swift in Sources */,
 				04503CC7288308CF00A5434D /* MainViewModel.swift in Sources */,
 				04503CD128830BEF00A5434D /* Config+server.swift in Sources */,
 				04503CD728830D2400A5434D /* TicketManager.swift in Sources */,
 				04503CEE288317D100A5434D /* UITableView+register.swift in Sources */,
+				04503CF928832B2900A5434D /* DetailCell.swift in Sources */,
 				04503CE1288313EB00A5434D /* BaseTableViewCell.swift in Sources */,
 				04503CE42883140B00A5434D /* ReusableViewProtocol.swift in Sources */,
 				04503CDA28830D7600A5434D /* RateModel.swift in Sources */,
+				04503CF6288329FF00A5434D /* DetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

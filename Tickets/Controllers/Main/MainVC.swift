@@ -36,7 +36,10 @@ class MainVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        viewModel.loadData()
+        
+        if viewModel.numberOfRows == 0 {
+            viewModel.loadData()
+        }
     }
     
     init(viewModel: MainViewModel) {
@@ -88,6 +91,19 @@ extension MainVC: UITableViewDataSource {
 extension MainVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let detailModel = viewModel.detailModel(at: indexPath.row)
+        pushToDetails(detailModel)
+    }
+}
+
+// MARK: - Navigation
+
+private extension MainVC {
+    func pushToDetails(_ detailModel: DetailModel) {
+        let detailViewModel = DetailViewModel(transactions: detailModel.transactions,
+                                              rates: detailModel.rates)
+        let detailVC = DetailVC(viewModel: detailViewModel)
+        navigationController?.pushViewController(detailVC, animated: true)
     }
 }
 

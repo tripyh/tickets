@@ -13,6 +13,11 @@ struct MainCellModel {
     let currency: String?
 }
 
+struct DetailModel {
+    let transactions: [TransactionModel]
+    let rates: [RateModel]
+}
+
 class MainViewModel {
     
     // MARK: - Public properties
@@ -52,6 +57,20 @@ extension MainViewModel {
         }
         
         return cellModels[index]
+    }
+    
+    func detailModel(at index: Int) -> DetailModel {
+        let cellModel = cellModel(at: index)
+        var tempTransactions = [TransactionModel]()
+        
+        for transaction in transactions {
+            if cellModel?.sku == transaction.sku {
+                tempTransactions.append(transaction)
+            }
+        }
+        
+        let detailModel = DetailModel(transactions: tempTransactions, rates: rates)
+        return detailModel
     }
 }
 
