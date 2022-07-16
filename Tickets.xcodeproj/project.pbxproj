@@ -13,6 +13,7 @@
 		04C247222883071600ED4790 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C247212883071600ED4790 /* AppDelegate.swift */; };
 		04C2472B2883071A00ED4790 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C2472A2883071A00ED4790 /* Assets.xcassets */; };
 		04C2472E2883071A00ED4790 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C2472C2883071A00ED4790 /* LaunchScreen.storyboard */; };
+		9F1AE494F748349BB0362CCD /* libPods-Tickets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 541FC21CE783814AD8394617 /* libPods-Tickets.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		04C2472A2883071A00ED4790 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04C2472D2883071A00ED4790 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04C2472F2883071A00ED4790 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		541FC21CE783814AD8394617 /* libPods-Tickets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tickets.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B4124A9418233775E2EFE5 /* Pods-Tickets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tickets.debug.xcconfig"; path = "Target Support Files/Pods-Tickets/Pods-Tickets.debug.xcconfig"; sourceTree = "<group>"; };
+		CCDED954622BFB7AEE471688 /* Pods-Tickets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tickets.release.xcconfig"; path = "Target Support Files/Pods-Tickets/Pods-Tickets.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F1AE494F748349BB0362CCD /* libPods-Tickets.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +89,8 @@
 			children = (
 				04C247202883071600ED4790 /* Tickets */,
 				04C2471F2883071600ED4790 /* Products */,
+				15A5C7DC79CBBEBF8C0AE687 /* Pods */,
+				16DFF96D8E07F12EC4030A12 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +114,24 @@
 			path = Tickets;
 			sourceTree = "<group>";
 		};
+		15A5C7DC79CBBEBF8C0AE687 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84B4124A9418233775E2EFE5 /* Pods-Tickets.debug.xcconfig */,
+				CCDED954622BFB7AEE471688 /* Pods-Tickets.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		16DFF96D8E07F12EC4030A12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				541FC21CE783814AD8394617 /* libPods-Tickets.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,6 +139,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04C247322883071A00ED4790 /* Build configuration list for PBXNativeTarget "Tickets" */;
 			buildPhases = (
+				81E594598266997FC0CD767E /* [CP] Check Pods Manifest.lock */,
 				04C2471A2883071600ED4790 /* Sources */,
 				04C2471B2883071600ED4790 /* Frameworks */,
 				04C2471C2883071600ED4790 /* Resources */,
@@ -172,6 +198,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		81E594598266997FC0CD767E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tickets-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04C2471A2883071600ED4790 /* Sources */ = {
@@ -316,6 +367,7 @@
 		};
 		04C247332883071A00ED4790 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84B4124A9418233775E2EFE5 /* Pods-Tickets.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -343,6 +395,7 @@
 		};
 		04C247342883071A00ED4790 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCDED954622BFB7AEE471688 /* Pods-Tickets.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
