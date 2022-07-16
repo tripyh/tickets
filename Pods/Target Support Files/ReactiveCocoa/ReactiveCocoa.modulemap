@@ -1,4 +1,4 @@
-module ReactiveCocoa {
+framework module ReactiveCocoa {
   umbrella header "ReactiveCocoa-umbrella.h"
 
   export *

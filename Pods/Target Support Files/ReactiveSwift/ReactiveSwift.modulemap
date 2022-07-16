@@ -1,4 +1,4 @@
-module ReactiveSwift {
+framework module ReactiveSwift {
   umbrella header "ReactiveSwift-umbrella.h"
 
   export *

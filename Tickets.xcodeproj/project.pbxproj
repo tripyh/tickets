@@ -16,10 +16,16 @@
 		04503CD728830D2400A5434D /* TicketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04503CD628830D2400A5434D /* TicketManager.swift */; };
 		04503CDA28830D7600A5434D /* RateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04503CD928830D7600A5434D /* RateModel.swift */; };
 		04503CDC288310B700A5434D /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04503CDB288310B700A5434D /* TransactionModel.swift */; };
+		04503CE1288313EB00A5434D /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04503CE0288313EB00A5434D /* BaseTableViewCell.swift */; };
+		04503CE42883140B00A5434D /* ReusableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04503CE32883140B00A5434D /* ReusableViewProtocol.swift */; };
+		04503CE72883142A00A5434D /* NibLoadableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04503CE62883142A00A5434D /* NibLoadableViewProtocol.swift */; };
+		04503CE92883149D00A5434D /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04503CE82883149D00A5434D /* MainCell.swift */; };
+		04503CEB288314C000A5434D /* MainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04503CEA288314C000A5434D /* MainCell.xib */; };
+		04503CEE288317D100A5434D /* UITableView+register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04503CED288317D100A5434D /* UITableView+register.swift */; };
 		04C247222883071600ED4790 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C247212883071600ED4790 /* AppDelegate.swift */; };
 		04C2472B2883071A00ED4790 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C2472A2883071A00ED4790 /* Assets.xcassets */; };
 		04C2472E2883071A00ED4790 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C2472C2883071A00ED4790 /* LaunchScreen.storyboard */; };
-		9F1AE494F748349BB0362CCD /* libPods-Tickets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 541FC21CE783814AD8394617 /* libPods-Tickets.a */; };
+		161A4BB5D03FBA9CC8C84E4A /* Pods_Tickets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A51E166D9BA1B8E712D0EA9 /* Pods_Tickets.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,13 +38,19 @@
 		04503CD628830D2400A5434D /* TicketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketManager.swift; sourceTree = "<group>"; };
 		04503CD928830D7600A5434D /* RateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateModel.swift; sourceTree = "<group>"; };
 		04503CDB288310B700A5434D /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		04503CE0288313EB00A5434D /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		04503CE32883140B00A5434D /* ReusableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewProtocol.swift; sourceTree = "<group>"; };
+		04503CE62883142A00A5434D /* NibLoadableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableViewProtocol.swift; sourceTree = "<group>"; };
+		04503CE82883149D00A5434D /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		04503CEA288314C000A5434D /* MainCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCell.xib; sourceTree = "<group>"; };
+		04503CED288317D100A5434D /* UITableView+register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+register.swift"; sourceTree = "<group>"; };
 		04C2471E2883071600ED4790 /* Tickets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tickets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C247212883071600ED4790 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04C2472A2883071A00ED4790 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04C2472D2883071A00ED4790 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04C2472F2883071A00ED4790 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		541FC21CE783814AD8394617 /* libPods-Tickets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tickets.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B4124A9418233775E2EFE5 /* Pods-Tickets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tickets.debug.xcconfig"; path = "Target Support Files/Pods-Tickets/Pods-Tickets.debug.xcconfig"; sourceTree = "<group>"; };
+		9A51E166D9BA1B8E712D0EA9 /* Pods_Tickets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tickets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCDED954622BFB7AEE471688 /* Pods-Tickets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tickets.release.xcconfig"; path = "Target Support Files/Pods-Tickets/Pods-Tickets.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F1AE494F748349BB0362CCD /* libPods-Tickets.a in Frameworks */,
+				161A4BB5D03FBA9CC8C84E4A /* Pods_Tickets.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +93,7 @@
 		04503CC02883085E00A5434D /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				04503CDD288313BC00A5434D /* Cell */,
 				04503CC5288308BF00A5434D /* ViewModel */,
 				04503CC12883087000A5434D /* MainVC.swift */,
 				04503CC3288308AB00A5434D /* MainVC.xib */,
@@ -99,7 +112,10 @@
 		04503CC828830B8300A5434D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				04503CDE288313CD00A5434D /* Base */,
+				04503CEC288317B500A5434D /* Extensions */,
 				04503CC928830B8E00A5434D /* Networking */,
+				04503CE22883140000A5434D /* Protocols */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -156,6 +172,48 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		04503CDD288313BC00A5434D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04503CE82883149D00A5434D /* MainCell.swift */,
+				04503CEA288314C000A5434D /* MainCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		04503CDE288313CD00A5434D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				04503CDF288313D200A5434D /* Cell */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		04503CDF288313D200A5434D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04503CE0288313EB00A5434D /* BaseTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		04503CE22883140000A5434D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				04503CE62883142A00A5434D /* NibLoadableViewProtocol.swift */,
+				04503CE32883140B00A5434D /* ReusableViewProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		04503CEC288317B500A5434D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04503CED288317D100A5434D /* UITableView+register.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		04C247152883071600ED4790 = {
 			isa = PBXGroup;
 			children = (
@@ -200,7 +258,7 @@
 		16DFF96D8E07F12EC4030A12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				541FC21CE783814AD8394617 /* libPods-Tickets.a */,
+				9A51E166D9BA1B8E712D0EA9 /* Pods_Tickets.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -216,6 +274,7 @@
 				04C2471A2883071600ED4790 /* Sources */,
 				04C2471B2883071600ED4790 /* Frameworks */,
 				04C2471C2883071600ED4790 /* Resources */,
+				8F8D946469DD5D07825A964D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -266,6 +325,7 @@
 			files = (
 				04503CC4288308AB00A5434D /* MainVC.xib in Resources */,
 				04C2472E2883071A00ED4790 /* LaunchScreen.storyboard in Resources */,
+				04503CEB288314C000A5434D /* MainCell.xib in Resources */,
 				04C2472B2883071A00ED4790 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +355,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8F8D946469DD5D07825A964D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tickets/Pods-Tickets-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tickets/Pods-Tickets-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tickets/Pods-Tickets-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -304,12 +381,17 @@
 			files = (
 				04503CDC288310B700A5434D /* TransactionModel.swift in Sources */,
 				04C247222883071600ED4790 /* AppDelegate.swift in Sources */,
+				04503CE72883142A00A5434D /* NibLoadableViewProtocol.swift in Sources */,
 				04503CCC28830BB200A5434D /* NetworkProvider.swift in Sources */,
 				04503CC22883087000A5434D /* MainVC.swift in Sources */,
+				04503CE92883149D00A5434D /* MainCell.swift in Sources */,
 				04503CD428830CB300A5434D /* TicketService.swift in Sources */,
 				04503CC7288308CF00A5434D /* MainViewModel.swift in Sources */,
 				04503CD128830BEF00A5434D /* Config+server.swift in Sources */,
 				04503CD728830D2400A5434D /* TicketManager.swift in Sources */,
+				04503CEE288317D100A5434D /* UITableView+register.swift in Sources */,
+				04503CE1288313EB00A5434D /* BaseTableViewCell.swift in Sources */,
+				04503CE42883140B00A5434D /* ReusableViewProtocol.swift in Sources */,
 				04503CDA28830D7600A5434D /* RateModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

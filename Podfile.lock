@@ -7,12 +7,14 @@ PODS:
   - ReactiveCocoa (12.0.0):
     - ReactiveSwift (~> 7.0)
   - ReactiveSwift (7.0.0)
+  - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - Alamofire
   - Moya
   - ReactiveCocoa
   - ReactiveSwift
+  - SVProgressHUD
 
 SPEC REPOS:
   trunk:
@@ -20,13 +22,15 @@ SPEC REPOS:
     - Moya
     - ReactiveCocoa
     - ReactiveSwift
+    - SVProgressHUD
 
 SPEC CHECKSUMS:
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   ReactiveCocoa: 5d10386f0ce09f922006efbf784881c5fade27c5
   ReactiveSwift: 48c4b9d3b497e8dd20b10300bb1a28ff93550f13
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: e21becc9119109446b0f8a365010a1869ff6dcdf
+PODFILE CHECKSUM: c77d2855b6bcef1fbf5fb695fbfa839841dd3b3d
 
 COCOAPODS: 1.11.3

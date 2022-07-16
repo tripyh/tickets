@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC" customModule="Tickets" customModuleProvider="target">
             <connections>
+                <outlet property="loaderView" destination="zUD-S0-EWN" id="ebh-HW-fhK"/>
+                <outlet property="tableView" destination="hEJ-WK-J29" id="AgH-3e-0Cs"/>
                 <outlet property="view" destination="iN0-l3-epB" id="ryK-pt-H48"/>
             </connections>
         </placeholder>
@@ -18,8 +20,33 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hEJ-WK-J29">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Rus-W9-pfH"/>
+                        <outlet property="delegate" destination="-1" id="eIz-Qq-kRL"/>
+                    </connections>
+                </tableView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="zUD-S0-EWN">
+                    <rect key="frame" x="197" y="443" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="GE3-Eg-cJi"/>
+                        <constraint firstAttribute="height" constant="20" id="jXq-E3-aBr"/>
+                    </constraints>
+                </activityIndicatorView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="zUD-S0-EWN" firstAttribute="centerY" secondItem="hEJ-WK-J29" secondAttribute="centerY" id="4Gm-LX-E5a"/>
+                <constraint firstItem="zUD-S0-EWN" firstAttribute="centerX" secondItem="hEJ-WK-J29" secondAttribute="centerX" id="BQq-l2-aRM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="hEJ-WK-J29" secondAttribute="bottom" id="HQv-bh-JpD"/>
+                <constraint firstItem="hEJ-WK-J29" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="IrU-lg-xJ4"/>
+                <constraint firstItem="hEJ-WK-J29" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="MaJ-Ke-KPl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hEJ-WK-J29" secondAttribute="trailing" id="w94-le-56m"/>
+            </constraints>
             <point key="canvasLocation" x="139" y="81"/>
         </view>
     </objects>
